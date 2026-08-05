@@ -1,0 +1,17 @@
+---
+import { useTranslations } from "@/i18n/utils";
+
+const lang = (Astro.currentLocale ?? "es") as "es" | "en";
+const t = useTranslations(lang);
+---
+
+<section class="flex justify-center items-center">
+  <h1 class="text-(--primary) uppercase">{t("hero.title")}</h1>
+
+  <p></p>
+
+  <div>
+    <a href=""></a>
+    <a href=""></a>
+  </div>
+</section>
