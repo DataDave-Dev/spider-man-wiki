@@ -14,7 +14,9 @@ import { SEO } from "@/const";
     <title>{SEO.title}</title>
   </head>
   <body>
-    <slot />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
 
@@ -23,6 +25,6 @@ import { SEO } from "@/const";
   body {
     margin: 0;
     height: 100dvh;
-    background: var(--neutral);
+    background: var(--color-neutral);
   }
 </style>

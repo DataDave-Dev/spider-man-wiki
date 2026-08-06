@@ -1,17 +1,43 @@
 ---
+import Compass from "@/components/icons/Compass.astro";
+import Book from "@/components/icons/Book.astro";
 import { useTranslations } from "@/i18n/utils";
 
 const lang = (Astro.currentLocale ?? "es") as "es" | "en";
 const t = useTranslations(lang);
 ---
 
-<section class="flex justify-center items-center">
-  <h1 class="text-(--primary) uppercase">{t("hero.title")}</h1>
+<section class="flex flex-col justify-center items-center h-screen text-center">
+  <h1 class="text-(--color-primary) text-9xl text-center mb-6">
+    <span class="block text-white">{t("hero.title.intro")}</span>
+    <span class="block">{t("hero.title.name")}</span>
+  </h1>
 
-  <p></p>
+  <p class="text-(--color-text) text-xl w-1/2">
+    {t("hero.description")}
+  </p>
 
-  <div>
-    <a href=""></a>
-    <a href=""></a>
+  <div class="flex text-white gap-8 mt-12">
+    <a
+      class="flex gap-2 bg-(--color-primary) px-6 py-4 uppercase font-bold tracking-wider font-anton hover:shadow-(--color-primary)"
+      href=""
+    >
+      <Compass />
+      {t("hero.button-1")}
+    </a>
+
+    <a
+      class="flex gap-2 bg-(--color-a-secondary) px-6 py-4 uppercase font-bold tracking-wider font-anton"
+      href=""
+    >
+      <Book />
+      {t("hero.button-2")}</a
+    >
   </div>
 </section>
+
+<style>
+  h1 {
+    text-shadow: 0px 0px 0.2rem var(--color-primary);
+  }
+</style>

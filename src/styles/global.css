@@ -3,12 +3,17 @@
 @import "@fontsource-variable/inter/wght.css";
 
 :root {
-  --primary: #e62429;
-  --secondary: #1da1d2;
-  --tertiary: #007fb0;
-  --neutral: #0a0a0a;
+  --color-primary: #e62429;
+  --color-secondary: #1da1d2;
+  --color-tertiary: #007fb0;
+  --color-neutral: #0a0a0a;
+  --color-text: #e7bdb8;
+  --color-a-secondary: #1d1d1d;
+}
 
-  --font-title: "Anton", system-ui;
+@theme {
+  --font-anton: "Anton", system-ui;
+  --font-inter: "Inter Variable", system-ui;
 }
 
 @layer base {
@@ -18,6 +23,7 @@
   h4,
   h5,
   h6 {
-    font-family: var(--font-title);
+    font-family: var(--font-anton);
+    text-transform: uppercase;
   }
 }
