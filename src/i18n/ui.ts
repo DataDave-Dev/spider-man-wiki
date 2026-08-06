@@ -12,7 +12,7 @@ export const ui = {
     "header.nav-1": "Inicio",
     "header.nav-2": "Historia",
     "header.nav-3": "Multiverso",
-    "header.nav-4": "Villanos",
+    "header.nav-4": "Personajes",
     "header.button-1": "Iniciar Sesión",
     "header.button-2": "Únete a la iniciativa",
 
@@ -30,7 +30,7 @@ export const ui = {
     "header.nav-1": "Home",
     "header.nav-2": "History",
     "header.nav-3": "Multiverse",
-    "header.nav-4": "Villans",
+    "header.nav-4": "Characters",
     "header.button-1": "Sign In",
     "header.button-2": "Join Initiative",
 
