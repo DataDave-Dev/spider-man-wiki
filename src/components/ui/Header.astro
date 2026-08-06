@@ -16,14 +16,14 @@ const navItems = [
 ---
 
 <header
-  class="absolute z-10 w-full flex items-center justify-between text-(--color-text) p-6 bg-(--color-neutral) border border-white/20 shadow-[0_-2rem_3rem_0_var(--color-primary)]"
+  class="absolute z-10 w-full flex items-center justify-between text-(--color-text) p-6 bg-(--color-neutral)/60 border border-white/20 shadow-[0_-2rem_3rem_0_var(--color-primary)]"
 >
   <a
     href={getRelativeLocaleUrl(lang, "/")}
     class="font-anton uppercase tracking-wider text-2xl">{t("header.title")}</a
   >
   <nav>
-    <ul class="flex gap-4 text-gray-400">
+    <ul class="flex gap-8 text-gray-400">
       {
         navItems.map((item) => {
           const isActive = normalizePath(item.href) === currentPath;
